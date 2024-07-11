@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: white">
+
+        <!--Camera-->
+        <a-entity position="0 0 7">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--Body-->
+        <a-box position="0 1.1 0" color="grey" scale="1 2 1">a</a-box>
+
+        <!--Head-->
+        <a-box position="0 2.8 0" color="red" scale="1.5 1.5 1"></a-box>
+
+        <!--Eyes-->
+        <a-sphere position="-0.4 3 0.5" color="white" radius="0.2"></a-sphere>
+        <a-sphere position="0.4 3 0.5" color="white" radius="0.2"></a-sphere>
+        
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: position; from:0 -0.1 0 ;to: 0.02 0 0;dir:alternate; loop: true; dur: 1000">
+            <a-sphere position="-0.4 3 0.6" color="black" radius="0.13"></a-sphere>
+        </a-entity>
+
+        <a-entity position="0 0 0" rotation="0 0 0"
+        animation="property: position; from:0.8 -0.1 0 ;to: 0.82 0 0;dir:alternate; loop: true; dur: 1000">
+        <a-sphere position="-0.4 3 0.6" color="black" radius="0.13"></a-sphere>
+        </a-entity>
+        
+        <!--Mouth-->
+        <a-box position="0 2.5 0.5" color="black" scale="1 0.1 0.5"></a-box>
+
+        <!--Legs-->
+        <a-cylinder position="0.5 -0.8 0" color="black" radius="0.5" scale="0.5 2 0.5"></a-cylinder>
+        <a-cylinder position="-0.5 -0.8 0" color="black" radius="0.5" scale="0.5 2 0.5"></a-cylinder>
+
+        <!--Arms-->
+        <a-box position="0 1.5 0" color="black" scale="3 0.2 0.2"></a-box>
+
+    </a-scene>
+</body>
+
+</html>
